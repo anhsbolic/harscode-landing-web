@@ -1,105 +1,127 @@
 /* Harscode Pragmatic Style - Midnight Blue Edition */
 :root {
-    /* Color Palette - Updated Background */
-    --bg: #141a26; 
-    --text-primary: #e4e4e4;
-    --text-secondary: #a0a6b3; /* Sedikit lebih terang agar terbaca di atas #141a26 */
-    --accent: #ffd700;        /* Electric Yellow tetap dipertahankan untuk kontras */
-    --border: #1f2937;        /* Border disesuaikan agar menyatu dengan background */
+  /* Color Palette - Updated Background */
+  --bg: #141a26;
+  --text-primary: #e4e4e4;
+  --text-secondary: #a0a6b3; /* Sedikit lebih terang agar terbaca di atas #141a26 */
+  --accent: #ffd700; /* Electric Yellow tetap dipertahankan untuk kontras */
+  --border: #1f2937; /* Border disesuaikan agar menyatu dengan background */
 }
 
 body {
-    background-color: var(--bg);
-    color: var(--text-primary);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    line-height: 1.5;
-    margin: 0;
-    padding: 0;
+  background-color: var(--bg);
+  color: var(--text-primary);
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-    max-width: 600px;
-    margin: 4rem auto;
-    padding: 0 2rem;
+  max-width: 600px;
+  margin: 4rem auto;
+  padding: 0 2rem;
 }
 
 .hero {
-    text-align: center;      /* Ini yang membuat teks di dalamnya center */
-    margin-bottom: 4rem;
+  text-align: center; /* Ini yang membuat teks di dalamnya center */
+  margin-bottom: 4rem;
 }
 
 .profile-img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 1.5rem;   /* Spasi bawah foto ke nama */
-    border: 2px solid var(--accent);
-    display: block;          /* Penting agar margin auto bekerja */
-    margin-left: auto;       /* Centering foto */
-    margin-right: auto;      /* Centering foto */
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.5rem; /* Spasi bawah foto ke nama */
+  border: 2px solid var(--accent);
+  display: block; /* Penting agar margin auto bekerja */
+  margin-left: auto; /* Centering foto */
+  margin-right: auto; /* Centering foto */
 }
 
 h1 {
-    font-size: 1.75rem;
-    font-weight: 700;
-    margin-bottom: 2rem;
-    letter-spacing: -0.04em;
-    color: #ffffff;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  letter-spacing: -0.04em;
+  color: #ffffff;
 }
 
 .description {
-    font-size: 1rem;
-    font-weight: 500;
-    color: var(--text-secondary);
-    margin-bottom: 4rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-bottom: 4rem;
 }
 
 /* Hub List Style */
 .hub {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .link-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    padding: 1rem 0;
-    border-bottom: 1px solid var(--border);
-    text-decoration: none;
-    color: var(--text-primary);
-    transition: all 0.2s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border);
+  text-decoration: none;
+  color: var(--text-primary);
+  transition: all 0.2s ease;
 }
 
-.link-item:hover { 
-    color: var(--accent); 
-    border-bottom-color: var(--accent);
+.link-item:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
 }
 
-.label { font-weight: 600; font-size: 1.1rem; }
-.detail { color: var(--text-secondary); font-size: 0.95rem; }
+.label {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.detail {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
 
 footer {
-    text-align: center;
-    margin-top: 6rem;
-    font-size: 0.8rem;
-    color: #4b5563; /* Disesuaikan agar kontras pas dengan #141a26 */
+  text-align: center;
+  margin-top: 6rem;
+  font-size: 0.8rem;
+  color: #4b5563; /* Disesuaikan agar kontras pas dengan #141a26 */
 }
 
 .logo-footer-container {
-    margin-top: 2rem;      /* Memberikan jarak dari list sebelumnya */
-    text-align: center;    /* Memastikan logo berada di tengah */
+  margin-top: 2rem; /* Memberikan jarak dari list sebelumnya */
+  text-align: center; /* Memastikan logo berada di tengah */
 }
 
 .brand-logo {
-    width: 240px;          /* Sesuaikan ukuran logo sesuai kebutuhan */
-    height: auto;          /* Menjaga aspek rasio */
-    opacity: 0.8;          /* Sedikit transparansi agar terlihat lebih halus */
-    transition: opacity 0.3s ease;
+  width: 240px; /* Sesuaikan ukuran logo sesuai kebutuhan */
+  height: auto; /* Menjaga aspek rasio */
+  opacity: 0.8; /* Sedikit transparansi agar terlihat lebih halus */
+  transition: opacity 0.3s ease;
 }
 
 .brand-logo:hover {
-    opacity: 1;            /* Menjadi lebih jelas saat di-hover */
+  opacity: 1; /* Menjadi lebih jelas saat di-hover */
+}
+
+/* Pastikan ini ada di bagian bawah file style.css kamu */
+@media (max-width: 600px) {
+  .link-item {
+    flex-direction: column; /* Ubah arah ke kolom (menumpuk) */
+    align-items: flex-start; /* Rata kiri */
+    gap: 0.5rem; /* Beri sedikit jarak antar baris */
+    padding: 1.25rem 0; /* Sedikit diperlebar agar lebih nyaman di tap */
+  }
+
+  .detail {
+    margin-left: 0; /* Hapus margin jika ada */
+    font-size: 0.85rem; /* Sedikit diperkecil agar tidak terlalu dominan */
+  }
 }
