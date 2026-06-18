@@ -10,6 +10,10 @@
 
 body {
   background-color: var(--bg);
+  background-image: radial-gradient(circle, #1f2937 1px, transparent 1px);
+  background-size: 30px 30px;
+  background-attachment: fixed;
+  color: var(--text-primary);
   color: var(--text-primary);
   font-family:
     -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -18,10 +22,51 @@ body {
   padding: 0;
 }
 
+.blob {
+  position: fixed;
+  top: -10%;
+  left: -10%;
+  width: 400px;
+  height: 400px;
+  background: rgba(255, 215, 0, 0.03); /* Warna aksen kuning sangat pudar */
+  filter: blur(100px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.blob {
+  animation: float 15s infinite ease-in-out;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(20px, 40px) scale(1.1);
+  }
+}
+
 .container {
   max-width: 600px;
   margin: 4rem auto;
   padding: 0 2rem;
+}
+
+.container {
+  animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .hero {
@@ -77,6 +122,17 @@ h1 {
 .link-item:hover {
   color: var(--accent);
   border-bottom-color: var(--accent);
+}
+
+.link-item {
+  transition:
+    transform 0.3s ease,
+    padding-left 0.3s ease;
+}
+
+.link-item:hover {
+  padding-left: 10px; /* Sedikit geser ke kanan */
+  color: var(--accent);
 }
 
 .label {
